@@ -53,14 +53,17 @@ module.exports = function (grunt) {
         }
       },
       less: {
-        files: ['<%= config.src %>/<%= config.cssFolder %>/**/*.{css,less}'],
+        files: [
+          '<%= config.src %>/<%= config.cssFolder %>/**/*.{css,less}',
+          '<%= config.src %>/assemble/patterns/**/*.{css,less}'
+        ],
         tasks: ['less', 'autoprefixer', 'newer:assemble']
       },
       gruntfile: {
         files: ['Gruntfile.js']
       },
       pages: {
-        files: ['<%= config.src %>/assemble/pages/{,*/}*.hbs'],
+        files: ['<%= config.src %>/assemble/{pages,patterns}/{,*/}*.hbs'],
         tasks: ['newer:assemble']
       },
       assemble: {
@@ -234,6 +237,20 @@ module.exports = function (grunt) {
             ext: '.min.css'
           }
         ]
+      },
+      patterns: {
+        options: {
+          compress: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: '<%= config.src %>/assemble/patterns/',
+            src: ['**/*.{less,css}', '!_*', '!*.style.*'],
+            dest: '<%= config.dist %>/<%= config.cssFolder %>/',
+            ext: '.min.css'
+          }
+        ]
       }
     },
 
@@ -283,11 +300,23 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          layout: 'component.hbs',
+          layout: 'pattern.hbs',
           partials: '<%= config.src %>/app/styles/core/ks/*.less'
         },
         files: {
           '<%= config.dist %>/': ['<%= config.src %>/assemble/pages/{,*/}*.hbs']
+        }
+      },
+      patterns: {
+        options: {
+          layout: 'pattern.hbs',
+          partials: '<%= config.src %>/assemble/patterns/*{.less,.pattern.hbs}'
+        },
+        files: {
+          '<%= config.dist %>/patterns/': [
+            '<%= config.src %>/assemble/patterns/{,*/}*.hbs',
+            '!<%= config.src %>/assemble/patterns/{,*/}*pattern.hbs'
+          ]
         }
       }
     },

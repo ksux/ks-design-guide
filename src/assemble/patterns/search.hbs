@@ -1,30 +1,30 @@
 ---
-title: Heading
-slug: heading
-categories: atom
+title: Search
+slug: search
+categories: molecule
 ---
 
 {{#markdown}}
-I say something special about this.
+This is a search form.
 {{/markdown}}
 
 <div class="ksdg-Example">
   <h2 class="ksdg-Example-label">Example</h2>
   <div class="ksdg-Example-render">
-{{> heading}}
+{{> search.pattern}}
   </div>
 
   <h2 class="ksdg-Example-label">HTML</h2>
 {{#markdown}}
 ```html
-{{> heading}}
+{{> search.pattern}}
 ```
 {{/markdown}}
 
   <h2 class="ksdg-Example-label">CSS</h2>
 {{#markdown}}
 ```scss
-{{> _heading}}
+{{> search.style}}
 ```
 {{/markdown}}
 </div>

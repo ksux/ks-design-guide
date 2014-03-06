@@ -54,7 +54,7 @@ module.exports = function (grunt) {
       },
       less: {
         files: ['<%= config.src %>/<%= config.cssFolder %>/**/*.{css,less}'],
-        tasks: ['less', 'newer:assemble']
+        tasks: ['less', 'autoprefixer', 'newer:assemble']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -237,6 +237,21 @@ module.exports = function (grunt) {
       }
     },
 
+    // Add vendor prefixed styles
+    autoprefixer: {
+      options: {
+        browsers: ['last 1 version']
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.dist %>/<%= config.cssFolder %>/',
+          src: '{,*/}*.css',
+          dest: '<%= config.dist %>/<%= config.cssFolder %>/'
+        }]
+      }
+    },
+
     // Use Assemble to generate all HTML pages
     assemble: {
       options: {
@@ -311,6 +326,7 @@ module.exports = function (grunt) {
     'clean',
     'convert',
     'less',
+    'autoprefixer',
     'jshint',
     'copy',
     'assemble'

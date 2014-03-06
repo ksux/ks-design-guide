@@ -2,13 +2,13 @@
   <a href="/" class="ksdg-Header-title">Kuali Student Design Guide</a>
 </header>
 
-<nav>
+<nav class="ksdg-Nav">
 {{#each categories}}
-  <h1>{{titleize category}}</h1>
-  <ul>
+  <h1 class="ksdg-Nav-title">{{titleize category}}</h1>
+  <div class="ksdg-Nav-list">
     {{#each pages}}
-    <li><a href="{{relative ../../page.dest dest}}">{{data.title}}</a></li>
+    <a class="ksdg-NavList-item" href="{{relative ../../page.dest dest}}">{{data.title}}</a>
     {{/each}}
-  </ul>
+  </div>
 {{/each}}
 </nav>

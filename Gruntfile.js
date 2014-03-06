@@ -210,20 +210,6 @@ module.exports = function (grunt) {
     // compile all non-partial LESS files into CSS
     // and copy all CSS files into their appropriate location as well
     less: {
-      development: {
-        options: {
-          compress: false
-        },
-        files: [
-          {
-            expand: true,
-            cwd: '<%= config.src %>/<%= config.cssFolder %>/',
-            src: ['**/*.{less,css}', '!_*'],
-            dest: '<%= config.dist %>/<%= config.cssFolder %>/',
-            ext: '.css'
-          }
-        ]
-      },
       production: {
         options: {
           compress: true
@@ -232,7 +218,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: '<%= config.src %>/<%= config.cssFolder %>/',
-            src: ['**/*.{less,css}', '!_*'],
+            src: ['**/*.{less,css}', '!**/_*.{less,css}'],
             dest: '<%= config.dist %>/<%= config.cssFolder %>/',
             ext: '.min.css'
           }
@@ -246,7 +232,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: '<%= config.src %>/assemble/patterns/',
-            src: ['**/*.{less,css}', '!_*', '!*.style.*'],
+            src: ['**/*.{less,css}', '!**/*{_,.style}.{less,css}'],
             dest: '<%= config.dist %>/<%= config.cssFolder %>/',
             ext: '.min.css'
           }

@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="{{relative page.dest site.componentsFolder}}/normalize-css/normalize.css" />
 
     <link rel="stylesheet" href="{{relative page.dest site.cssFolder}}/{{site.cssMainFile}}.min.css" />
+    <link rel="stylesheet" href="{{relative page.dest site.cssFolder}}/patterns.min.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
 
     {{#if page.styles}}
       {{#each page.styles}}
@@ -29,13 +32,34 @@
 
   <body class="ksdg-Page">
 
-    <div class="ksdg-Page-header">
-    {{> navbar }}
-    </div>
+    <header class="ksdg-Page-header ksdg-Header">
+      <a href="{{relative page.dest ''}}" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <nav class="ksdg-Header-nav">
+        <a class="ksdg-Header-navItem{{#if patterns}} ksdg-Header-navItem--active{{/if}}"
+          href="{{relative page.dest 'patterns'}}">Patterns</a>
+      </nav>
+      <span class="ksdg-Header-version">{{site.version}}</span>
+    </header>
 
     <div class="ksdg-Page-body">
-      {{> body }}
-    </div><!-- /.container -->
+
+      <nav class="ksdg-Page-nav ksdg-Nav">
+      {{#each categories}}
+        <h1 class="ksdg-Nav-title">{{titleize category}}</h1>
+        <div class="ksdg-Nav-list">
+          {{#each pages}}
+          <a class="ksdg-Nav-item{{#is ../../page.dest dest}} ksdg-Nav-item--active{{/is}}"
+            href="{{relative ../../page.dest dest}}">{{data.title}}</a>
+          {{/each}}
+        </div>
+      {{/each}}
+      </nav>
+
+      <main class="ksdg-Page-main">
+        {{> body }}
+      </main>
+
+    </div>
 
     {{> scripts }}
   </body>

@@ -9,7 +9,8 @@
   <h1 class="ksdg-Nav-title">{{titleize category}}</h1>
   <div class="ksdg-Nav-list">
     {{#each pages}}
-    <a class="ksdg-NavList-item" href="{{relative ../../page.dest dest}}">{{data.title}}</a>
+    <a class="ksdg-Nav-item{{#is ../../page.dest dest}} ksdg-Nav-item--active{{/is}}"
+      href="{{relative ../../page.dest dest}}">{{data.title}}</a>
     {{/each}}
   </div>
 {{/each}}

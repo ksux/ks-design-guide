@@ -7,3 +7,4 @@ jsFolder:         "app/scripts"
 imgFolder:        "app/img"
 cssMainFile:      "main"
 jsMainFile:       "scripts"
+version: 0.1.0

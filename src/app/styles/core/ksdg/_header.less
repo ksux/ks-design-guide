@@ -1,8 +1,38 @@
 .ksdg-Header {
-  background-color: #DDD;
-  padding: 1em;
+  align-items: center;
+  box-shadow: 0 0.25rem 0 0 #ddd;
+  display: flex;
 
   &-title {
     font-size: 1.2em;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+
+  &-nav {
+    flex: 1;
+  }
+
+  &-navItem {
+    font-size: 1.2em;
+    padding: 0.5rem;
+    text-decoration: none;
+
+    &:hover, &--active {
+      background-color: #eef;
+      box-shadow: 0 0.25rem 0 0 #99f;
+    }
+  }
+
+  &-version {
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    font-size: 0.8em;
+    margin-right: 0.5rem;
+    padding: 0.25rem;
+
+    &::before {
+      content: 'Version ';
+    }
   }
 }

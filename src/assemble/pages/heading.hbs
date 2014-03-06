@@ -1,0 +1,28 @@
+---
+title: Heading
+slug: heading
+categories: atom
+---
+
+{{#markdown}}
+I say something special about this.
+{{/markdown}}
+
+<div class="ksdg-Example">
+  <h2 class="ksdg-Example-label">Example</h2>
+{{> heading}}
+
+  <h2 class="ksdg-Example-label">HTML</h2>
+{{#markdown}}
+```html
+{{> heading}}
+```
+{{/markdown}}
+
+  <h2 class="ksdg-Example-label">CSS</h2>
+{{#markdown}}
+```scss
+{{> _heading}}
+```
+{{/markdown}}
+</div>

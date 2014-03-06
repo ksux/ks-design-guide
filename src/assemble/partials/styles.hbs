@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="{{site.cssFolder}}/{{site.cssMainFile}}.css" />
+
+<link rel="stylesheet" href="{{site.componentsFolder}}/highlight/src/styles/github.css" />
+
+{{#if page.styles}}
+  {{#each page.styles}}
+    <link rel="stylesheet" href="{{../../site.cssFolder}}/{{.}}.css" />
+  {{/each}}
+{{/if}}

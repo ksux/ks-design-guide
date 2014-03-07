@@ -1,6 +1,6 @@
 .ksdg-Header {
   align-items: center;
-  box-shadow: 0 0.25rem 0 0 #ddd;
+  box-shadow: 0 0.25rem 0 0 @color-Base;
   display: flex;
 
   &-title {
@@ -19,13 +19,13 @@
     text-decoration: none;
 
     &:hover, &--active {
-      background-color: #eef;
-      box-shadow: 0 0.25rem 0 0 #99f;
+      background-color: @color-Active;
+      box-shadow: 0 0.25rem 0 0 @color-Active--dark;
     }
   }
 
   &-version {
-    border: 1px solid #aaa;
+    border: 1px solid @color-Base;
     border-radius: 2px;
     font-size: 0.8em;
     margin-right: 0.5rem;

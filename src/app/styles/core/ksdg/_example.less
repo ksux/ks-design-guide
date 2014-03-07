@@ -1,20 +1,21 @@
 .ksdg-Example {
-  border: 1px solid #ddd;
+  border: 1px solid @color-Base;
   margin: 1em 0;
 
   &-label {
-    background-color: #ddd;
+    background-color: @color-Base;
     display: block;
-    color: #999;
+    color: @color-Base--dark;
     font-size: 1em;
     font-weight: bold;
     margin: 0;
     padding: 0.5em;
+    text-shadow: 0 1px @color-Code;
     text-transform: uppercase;
   }
 
   &-render {
-    border: 0.5em solid #f8f8ff;
+    border: 0.5em solid @color-Code;
   }
 
   > pre {

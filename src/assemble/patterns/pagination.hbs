@@ -1,0 +1,43 @@
+---
+title: Pagination
+slug: pagination
+categories: molecule
+---
+
+{{#markdown}}
+Navigation of a large dataset by chunking records into smaller pages.
+
+## Problem
+There are too many matching records to fit on a single web page
+
+## Solution
+Break the larger search results into multiple pages of the same size
+
+## Context
+Large data sets may not fit well on a single web page. Pagination breaks up the
+full list of matching records into manageable smaller lists of equivalent size.
+When the full data set is not displayed on one page, provide navigation at the
+bottom of the table to move easily through the matching records, jumping to
+specific pages and the ends.
+{{/markdown}}
+
+<div class="ksdg-Example">
+  <h2 class="ksdg-Example-label">Example</h2>
+  <div class="ksdg-Example-render">
+{{> pagination.pattern}}
+  </div>
+
+  <h2 class="ksdg-Example-label">HTML</h2>
+{{#markdown}}
+```html
+{{> pagination.pattern}}
+```
+{{/markdown}}
+
+  <h2 class="ksdg-Example-label">CSS</h2>
+{{#markdown}}
+```scss
+{{> pagination.style}}
+```
+{{/markdown}}
+</div>

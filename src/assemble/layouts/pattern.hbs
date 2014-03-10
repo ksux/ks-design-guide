@@ -3,6 +3,34 @@ layout: default.hbs
 ---
 
 <h1 class="ksdg-Page-title">{{page.title}}</h1>
+
+{{{description}}}
+
+{{#markdown}}
+## Example
+{{/markdown}}
+
+<div class="ksdg-Example">
+  <h3 class="ksdg-Example-label">UI</h3>
+  <div class="ksdg-Example-render">
+{{{partial (concat this.basename '.pattern')}}}
+  </div>
+
+  <h3 class="ksdg-Example-label">HTML</h3>
+{{#markdown}}
+```html
+{{{partial (concat this.basename '.pattern')}}}
+```
+{{/markdown}}
+
+  <h3 class="ksdg-Example-label">CSS</h3>
+{{#markdown}}
+```scss
+{{{partial (concat this.basename '.style')}}}
+```
+{{/markdown}}
+</div>
+
 {{> body}}
 
 {{#if related}}
@@ -16,7 +44,7 @@ layout: default.hbs
   <li>
     <a href="{{relative ../../../this.page.dest this.dest}}">{{titleize this.basename}}</a>
     ({{titleize this.data.categories}}):
-    {{this.data.description}}
+    {{{this.data.description}}}
   </li>
     {{/is}}
   {{/each}}

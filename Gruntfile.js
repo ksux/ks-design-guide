@@ -148,24 +148,26 @@ module.exports = function (grunt) {
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= config.src %>',
-          dest: '<%= config.dist %>',
-          src: [
-            '*.{ico,png,txt,xml}',
-            '.htaccess',
-            '*.html',
-            'views/{,*/}*.html',
-            '<%= config.componentsFolder %>/**/*',
-            '<%= config.imgFolder %>/{,*/}*',
-            '<%= config.fontsFolder %>/{,*/}*',
-            '<%= config.dataFolder %>/{,*/}*',
-            '<%= config.imgFolder %>/{,*/}*',
-            '<%= config.jsFolder %>/{,*/}*.js'
-          ]
-        }]
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= config.src %>',
+            dest: '<%= config.dist %>',
+            src: [
+              '*.{ico,png,txt,xml}',
+              '.htaccess',
+              '*.html',
+              'views/{,*/}*.html',
+              '<%= config.componentsFolder %>/**/*',
+              '<%= config.imgFolder %>/{,*/}*',
+              '<%= config.fontsFolder %>/{,*/}*',
+              '<%= config.dataFolder %>/{,*/}*',
+              '<%= config.imgFolder %>/{,*/}*',
+              '<%= config.jsFolder %>/{,*/}*.js'
+            ]
+          }
+        ]
       }
     },
 
@@ -260,7 +262,8 @@ module.exports = function (grunt) {
       options: {
         plugins: [
           'assemble-contrib-permalinks',
-          'assemble-contrib-anchors'
+          'assemble-contrib-anchors',
+          'assemble-contrib-toc'
         ],
         helpers: ['<%= config.src %>/assemble/helpers/{,*/}*.js'],
         layout: 'default.hbs',
@@ -285,6 +288,9 @@ module.exports = function (grunt) {
           smartLists: true,
           smartypants: true,
           tables: true
+        },
+        toc: {
+          modifier: 'ksdg-Toc-list'
         }
       },
       pages: {

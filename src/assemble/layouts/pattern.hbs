@@ -4,3 +4,22 @@ layout: default.hbs
 
 <h1 class="ksdg-Page-title">{{page.title}}</h1>
 {{> body}}
+
+{{#if related}}
+{{#markdown}}
+## Related
+{{/markdown}}
+<ul>
+{{#each related}}
+  {{#each ../pages}}
+    {{#is ../this this.basename}}
+  <li>
+    <a href="{{relative ../../../this.page.dest this.dest}}">{{titleize this.basename}}</a>
+    ({{titleize this.data.categories}}):
+    {{this.data.description}}
+  </li>
+    {{/is}}
+  {{/each}}
+{{/each}}
+</ul>
+{{/if}}

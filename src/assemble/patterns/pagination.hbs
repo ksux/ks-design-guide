@@ -2,10 +2,14 @@
 title: Pagination
 slug: pagination
 categories: molecule
+description: Navigation of a large dataset by chunking records into smaller pages.
+related:
+- heading
+- search
 ---
 
 {{#markdown}}
-Navigation of a large dataset by chunking records into smaller pages.
+{{description}}
 
 ## Problem
 There are too many matching records to fit on a single web page
@@ -19,6 +23,15 @@ full list of matching records into manageable smaller lists of equivalent size.
 When the full data set is not displayed on one page, provide navigation at the
 bottom of the table to move easily through the matching records, jumping to
 specific pages and the ends.
+
+## When to use
+- If a large data sets does not fit easily onto a single web page.
+- To provide an easy means of navigating a large list without scrolling.
+
+## Issues
+- Suggest we use icons in the back.next.etc buttons, and links rather than
+buttons for the numbered buttons, rather than words, to reduce the visual
+weight of the pagination.
 {{/markdown}}
 
 <div class="ksdg-Example">

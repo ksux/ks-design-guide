@@ -39,7 +39,8 @@
     "pretty": "0.1.2",
     "time-grunt": "~0.2.10",
     "highlight.js": "^8.0.0",
-    "grunt-autoprefixer": "^0.7.2"
+    "grunt-autoprefixer": "^0.7.2",
+    "assemble-contrib-anchors": "^0.1.2"
   },
   "engines": {
     "node": ">=0.10.0"

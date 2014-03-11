@@ -17,7 +17,10 @@ layout: default.hbs
 
 <main class="ksdg-Page-main">
 
-<h1 class="ksdg-Page-title">{{page.title}}</h1>
+<div class="ksdg-Page-heading">
+  <h1 class="ksdg-Page-title">{{page.title}}</h1>
+  <span class="ksdg-Label">{{page.categories}}</span>
+</div>
 
 {{#markdown}}
 {{{description}}}
@@ -68,7 +71,7 @@ layout: default.hbs
     {{#is ../this this.basename}}
   <li>
     <a href="{{relative ../../../this.page.dest this.dest}}">{{titleize this.basename}}</a>
-    ({{titleize this.data.categories}}):
+    <span class="ksdg-Label ksdg-Label--small">{{this.data.categories}}</span>:
     {{{this.data.description}}}
   </li>
     {{/is}}

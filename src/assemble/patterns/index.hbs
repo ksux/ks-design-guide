@@ -6,7 +6,9 @@ layout: default.hbs
 
 <main class="ksdg-Page-main">
 
-  <h1 class="ksdg-Page-title">{{page.title}}</h1>
+  <div class="ksdg-Page-heading">
+    <h1 class="ksdg-Page-title">{{page.title}}</h1>
+  </div>
 
   {{#each categories}}
   <h2 class="ksdg-Patterns-title">{{titleize category}}s</h2>

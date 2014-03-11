@@ -44,15 +44,16 @@
     <div class="ksdg-Page-body">
 
       <nav class="ksdg-Page-nav ksdg-Nav">
+        <h1 class="util-Visibility-screenReadersOnly">Patterns</h1>
       {{#each categories}}
-        <h1 class="ksdg-Nav-title">{{titleize category}}</h1>
+        <h2 class="ksdg-Nav-title">{{titleize category}}s</h2>
         <div class="ksdg-Nav-list">
           {{#each pages}}
           <a class="ksdg-Nav-item{{#is ../../page.dest dest}} ksdg-Nav-item--active{{/is}}"
             href="{{relative ../../page.dest dest}}">{{data.title}}</a>
           {{#is ../../page.dest dest}}
           <div id="toc" class="ksdg-Nav-toc ksdg-Toc">
-            <h2 class="ksdg-Toc-title">Contents</h2>
+            <h3 class="ksdg-Toc-title">Contents</h3>
           </div>
           {{/is}}
           {{/each}}

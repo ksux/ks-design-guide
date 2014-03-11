@@ -10,26 +10,30 @@ layout: default.hbs
 ## Example
 {{/markdown}}
 
-<div class="ksdg-Example">
-  <h3 class="ksdg-Example-label">UI</h3>
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">UI</figcaption>
   <div class="ksdg-Example-render">
 {{{partial (concat this.basename '.pattern')}}}
   </div>
+</figure>
 
-  <h3 class="ksdg-Example-label">HTML</h3>
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">HTML</figcaption>
 {{#markdown}}
 ```html
 {{{partial (concat this.basename '.pattern')}}}
 ```
 {{/markdown}}
+</figure>
 
-  <h3 class="ksdg-Example-label">CSS</h3>
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">CSS</figcaption>
 {{#markdown}}
 ```scss
 {{{partial (concat this.basename '.style')}}}
 ```
 {{/markdown}}
-</div>
+</figure>
 
 {{> body}}
 

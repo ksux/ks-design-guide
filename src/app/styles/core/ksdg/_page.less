@@ -24,16 +24,32 @@
 
   &-main {
     flex: 1;
-    margin: 1em 1em 0;
+    margin: 1em 0.5em 0;
 
     @media @xs {
+      margin: 0 1em;
+    }
+
+    @media @sm {
       margin: 0 2em;
+    }
+
+    > h2 {
+      margin-bottom: 0.25em;
+
+      + p, + ul {
+        margin-top: 0;
+      }
     }
 
     // Aim for 90 characters per line.
     // http://practicaltypography.com/line-length.html
     > p, > ul {
       max-width: 40em;
+    }
+
+    > ul {
+      padding-left: 1.5em;
     }
   }
 

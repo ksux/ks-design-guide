@@ -4,4 +4,18 @@ slug: patterns
 layout: default.hbs
 ---
 
-We have lots of patterns you should try.
+<main class="ksdg-Page-main">
+
+  <h1 class="ksdg-Page-title">{{page.title}}</h1>
+
+  {{#each categories}}
+  <h2 class="ksdg-Patterns-title">{{titleize category}}s</h2>
+  <div class="ksdg-Patterns-list">
+      {{#each pages}}
+    <a class="ksdg-Patterns-item"
+      href="{{relative ../../page.dest dest}}">{{data.title}}</a>
+      {{/each}}
+  </div>
+  {{/each}}
+
+</main>

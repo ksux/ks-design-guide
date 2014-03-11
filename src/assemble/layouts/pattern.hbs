@@ -2,6 +2,26 @@
 layout: default.hbs
 ---
 
+<nav class="ksdg-Page-nav ksdg-Nav">
+  <h1 class="util-Visibility-screenReadersOnly">Patterns</h1>
+{{#each categories}}
+  <h2 class="ksdg-Nav-title">{{titleize category}}s</h2>
+  <div class="ksdg-Nav-list">
+    {{#each pages}}
+    <a class="ksdg-Nav-item{{#is ../../page.dest dest}} ksdg-Nav-item--active{{/is}}"
+      href="{{relative ../../page.dest dest}}">{{data.title}}</a>
+    {{#is ../../page.dest dest}}
+    <div id="toc" class="ksdg-Nav-toc ksdg-Toc">
+      <h3 class="ksdg-Toc-title">Contents</h3>
+    </div>
+    {{/is}}
+    {{/each}}
+  </div>
+{{/each}}
+</nav>
+
+<main class="ksdg-Page-main">
+
 <h1 class="ksdg-Page-title">{{page.title}}</h1>
 
 {{#markdown}}
@@ -55,3 +75,5 @@ layout: default.hbs
 {{/each}}
 </ul>
 {{/if}}
+
+</main>

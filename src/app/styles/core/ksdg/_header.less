@@ -1,38 +1,61 @@
 .ksdg-Header {
   align-items: center;
-  box-shadow: 0 0.25rem 0 0 @color-Base;
+  box-shadow: 0 0.25em 0 0 @color-Base;
   display: flex;
+  margin-bottom: 0.25em;
+
+  &-brand {
+    flex: 1;
+
+    @media @xs {
+      display: flex;
+    }
+  }
 
   &-title {
+    display: flex;
     font-size: 1.2em;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem;
     text-decoration: none;
-  }
-
-  &-nav {
-    flex: 1;
-  }
-
-  &-navItem {
-    font-size: 1.2em;
-    padding: 0.5rem;
-    text-decoration: none;
-
-    &:hover, &--active {
-      background-color: @color-Active;
-      box-shadow: 0 0.25rem 0 0 @color-Active--dark;
-    }
   }
 
   &-version {
     border: 1px solid @color-Base;
     border-radius: 2px;
     font-size: 0.8em;
-    margin-right: 0.5rem;
+    margin: 0 0.5rem;
     padding: 0.25rem;
 
     &::before {
-      content: 'Version ';
+      content: 'v';
+
+      @media @xs {
+        content: 'Version ';
+      }
+    }
+  }
+
+  &-nav {
+    display: flex;
+    padding-left: 0.5em;
+
+    @media @xs {
+      padding-left: 0;
+    }
+  }
+
+  &-navItem {
+    font-size: 1.2em;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+
+    @media @xs {
+      padding: 0.5rem;
+    }
+
+    &:hover, &--active {
+      background-color: @color-Active;
+      box-shadow: 0 0.25rem 0 0 @color-Active--dark;
     }
   }
 }

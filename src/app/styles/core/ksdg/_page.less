@@ -14,7 +14,12 @@
   }
 
   &-nav {
+    background-color: @color-Base--light;
     min-width: 10em;
+
+    @media @xs {
+      background-color: inherit;
+    }
   }
 
   &-main {

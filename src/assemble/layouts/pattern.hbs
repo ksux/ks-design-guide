@@ -10,11 +10,6 @@ layout: default.hbs
     {{#each pages}}
     <a class="ksdg-Nav-item{{#is ../../page.dest dest}} ksdg-Nav-item--active{{/is}}"
       href="{{relative ../../page.dest dest}}">{{data.title}}</a>
-    {{#is ../../page.dest dest}}
-    <div id="toc" class="ksdg-Nav-toc ksdg-Toc">
-      <h3 class="ksdg-Toc-title">Contents</h3>
-    </div>
-    {{/is}}
     {{/each}}
   </div>
 {{/each}}
@@ -26,7 +21,13 @@ layout: default.hbs
 
 {{#markdown}}
 {{{description}}}
+{{/markdown}}
 
+<div id="toc" class="ksdg-Nav-toc ksdg-Toc">
+  <h2 class="ksdg-Toc-title">Contents</h2>
+</div>
+
+{{#markdown}}
 ## Example
 {{/markdown}}
 

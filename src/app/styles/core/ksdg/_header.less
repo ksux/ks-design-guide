@@ -1,42 +1,30 @@
 .ksdg-Header {
-  align-items: center;
   box-shadow: 0 0.25em 0 0 @color-Base;
-  display: flex;
   margin-bottom: 0.25em;
 
-  &-brand {
-    flex: 1;
-
-    @media @xs {
-      display: flex;
-    }
+  @media @xs {
+    display: flex;
   }
 
   &-title {
-    display: flex;
+    display: block;
     font-size: 1.2em;
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
   }
 
-  &-version {
-    border: 1px solid @color-Base;
-    border-radius: 2px;
-    font-size: 0.8em;
-    margin: 0 0.5rem;
-    padding: 0.25rem;
+  &-body {
+    align-items: center;
+    display: flex;
 
-    &::before {
-      content: 'v';
-
-      @media @xs {
-        content: 'Version ';
-      }
+    @media @xs {
+      flex: 1;
     }
   }
 
   &-nav {
     display: flex;
+    flex: 1;
     padding-left: 0.5em;
 
     @media @xs {
@@ -56,6 +44,26 @@
     &:hover, &--active {
       background-color: @color-Active;
       box-shadow: 0 0.25rem 0 0 @color-Active--dark;
+    }
+  }
+
+  &-version {
+    border: 1px solid @color-Base;
+    border-radius: 2px;
+    font-size: 0.8em;
+    margin: 0 0.5rem;
+    padding: 0 0.25rem;
+
+    @media @xs {
+      padding: 0.25rem;
+    }
+
+    &::before {
+      content: 'v';
+
+      @media @xs {
+        content: 'Version ';
+      }
     }
   }
 }

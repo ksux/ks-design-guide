@@ -33,14 +33,14 @@
   <body class="ksdg-Page">
 
     <header class="ksdg-Page-header ksdg-Header">
-      <div class="ksdg-Header-brand">
-        <a href="{{relative page.dest ''}}" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <a href="{{relative page.dest ''}}" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <div class="ksdg-Header-body">
         <nav class="ksdg-Header-nav">
           <a class="ksdg-Header-navItem{{#if patterns}} ksdg-Header-navItem--active{{/if}}"
             href="{{relative page.dest 'patterns'}}">Patterns</a>
         </nav>
+        <span class="ksdg-Header-version">{{site.version}}</span>
       </div>
-      <span class="ksdg-Header-version">{{site.version}}</span>
     </header>
 
     <div class="ksdg-Page-body">

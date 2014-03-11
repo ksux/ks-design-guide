@@ -1,5 +1,16 @@
 .ksdg-Toc {
 
+  &-title {
+    font-size: 1em;
+    margin: 0;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+
+    @media @xs {
+      display: none;
+    }
+  }
+
   &-list {
   }
 
@@ -12,7 +23,11 @@
   a {
     display: block;
     font-size: 0.9em;
-    padding: 0.25rem 1rem 0.25rem 1.5rem;
+    padding: 0.25rem 1rem 0.25rem;
+
+    @media @xs {
+      padding-left: 1.5rem;
+    }
 
     &:hover, &--active {
       background-color: @color-Active;

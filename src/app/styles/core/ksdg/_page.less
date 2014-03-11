@@ -5,7 +5,12 @@
 
   &-body {
     display: flex;
-    margin-top: 2em;
+    flex-direction: column;
+
+    @media @xs {
+      flex-direction: row;
+      margin-top: 2em;
+    }
   }
 
   &-nav {
@@ -14,7 +19,11 @@
 
   &-main {
     flex: 1;
-    margin: 0 2em;
+    margin: 1em 1em 0;
+
+    @media @xs {
+      margin: 0 2em;
+    }
 
     // Aim for 90 characters per line.
     // http://practicaltypography.com/line-length.html

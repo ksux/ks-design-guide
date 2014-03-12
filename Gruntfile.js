@@ -19,6 +19,9 @@ module.exports = function (grunt) {
   var hljs = require('highlight.js');
   hljs.configure({ classPrefix: '' });
 
+  // NPM Package
+  //var pkg = require('./package.json');
+
   grunt.initConfig({
 
     // Project settings
@@ -329,7 +332,29 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%.'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:ksux/ks-design-guide.git',
+          branch: 'gh-pages'
+        }
+      },
+      local: {
+        options: {
+          remote: '../',
+          branch: 'build'
+        }
+      }
     }
+
   });
 
   // load assemble manually because it doesn't match the grunt-* pattern

@@ -1,5 +1,5 @@
 {
-  "name": "kuali-student-design-guide",
+  "name": "ks-design-guide",
   "description": "Kuali Student Design Guide",
   "version": "0.1.0",
   "homepage": "",
@@ -41,7 +41,8 @@
     "highlight.js": "^8.0.0",
     "grunt-autoprefixer": "^0.7.2",
     "assemble-contrib-anchors": "^0.1.2",
-    "assemble-contrib-toc": "^0.1.2"
+    "assemble-contrib-toc": "^0.1.2",
+    "grunt-build-control": "^0.1.2"
   },
   "engines": {
     "node": ">=0.10.0"

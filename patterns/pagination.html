@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pagination &mdash; Kuali Student Design Guide</title>
+
+    <link rel="stylesheet" href="../app/bower_components/highlight/src/styles/github.css">
+    <link rel="stylesheet" href="../app/bower_components/normalize-css/normalize.css">
+
+    <link rel="stylesheet" href="../app/styles/main.min.css">
+    <link rel="stylesheet" href="../app/styles/patterns.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="ksdg-Page">
+
+    <header class="ksdg-Page-header ksdg-Header">
+      <a href="../index.html" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <div class="ksdg-Header-body">
+        <nav class="ksdg-Header-nav">
+          <a class="ksdg-Header-navItem ksdg-Header-navItem--active" href="../patterns/index.html">Patterns</a>
+        </nav>
+        <span class="ksdg-Header-version">0.1.0</span>
+      </div>
+    </header>
+
+    <div class="ksdg-Page-body">
+      
+
+<nav class="ksdg-Page-nav ksdg-Nav">
+  <h1 class="util-Visibility-screenReadersOnly">Patterns</h1>
+
+  <h2 class="ksdg-Nav-title">Atoms</h2>
+  <div class="ksdg-Nav-list">
+    
+    <a class="ksdg-Nav-item" href="heading.html">Heading</a>
+    
+  </div>
+
+  <h2 class="ksdg-Nav-title">Molecules</h2>
+  <div class="ksdg-Nav-list">
+    
+    <a class="ksdg-Nav-item ksdg-Nav-item--active" href="pagination.html">Pagination</a>
+    
+    <a class="ksdg-Nav-item" href="search.html">Search</a>
+    
+  </div>
+
+</nav>
+
+<main class="ksdg-Page-main">
+
+<div class="ksdg-Page-heading">
+  <h1 class="ksdg-Page-title">Pagination</h1>
+  <span class="ksdg-Label">molecule</span>
+</div>
+
+<p>Navigation of a large dataset by chunking records into smaller pages.</p>
+
+
+<div id="toc" class="ksdg-Nav-toc ksdg-Toc">
+  <h2 class="ksdg-Toc-title">Contents</h2>
+<ul id="toc-list" class="ksdg-Toc-list"><li><ul><li><a href="#example">Example</a></li><li><a href="#problem">Problem</a></li><li><a href="#solution">Solution</a></li><li><a href="#context">Context</a></li><li><a href="#when-to-use">When to use</a></li><li><a href="#issues">Issues</a></li><li><a href="#related">Related</a></li></ul></li></ul></div>
+
+<h2 class="docs-heading">Example<a href="#example" name="example" class="anchor">
+  <span class="anchor-target" id="example"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+
+
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">UI</figcaption>
+  <div class="ksdg-Example-render">
+<nav class="ks-Pagination">
+  <a href="" class="ks-Pagination-item">First</a>
+  <a href="" class="ks-Pagination-item">Previous</a>
+  <a href="" class="ks-Pagination-item ks-Pagination-item--active">1</a>
+  <a href="" class="ks-Pagination-item">2</a>
+  <a href="" class="ks-Pagination-item">3</a>
+  <a href="" class="ks-Pagination-item">4</a>
+  <a href="" class="ks-Pagination-item">5</a>
+  <a href="" class="ks-Pagination-item">Next</a>
+  <a href="" class="ks-Pagination-item">Last</a>
+</nav>
+
+  </div>
+</figure>
+
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">HTML</figcaption>
+<pre><code class="language-html"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>First<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>Previous<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item ks-Pagination-item--active"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>5<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>Next<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>Last<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
+
+</figure>
+
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">CSS</figcaption>
+<pre><code class="language-scss"><span class="class">.ks-Pagination</span> {
+  <span class="attribute">background-color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+  <span class="attribute">display</span><span class="value">: inline-block;</span>
+  <span class="attribute">border</span><span class="value">: <span class="number">1</span>px solid <span class="hexcolor">#ccc</span>;</span>
+
+  &amp;-item {
+    <span class="attribute">display</span><span class="value">: inline-block;</span>
+    <span class="attribute">padding</span><span class="value">: <span class="number">0.25</span>em;</span>
+
+    &amp;--active {
+      <span class="attribute">color</span><span class="value">: <span class="hexcolor">#666</span>;</span>
+      <span class="attribute">text-decoration</span><span class="value">: none;</span>
+    }
+
+    &amp;<span class="pseudo">:hover</span> {
+      <span class="attribute">background-color</span><span class="value">: <span class="hexcolor">#eef</span>;</span>
+    }
+  }
+}</code></pre>
+
+</figure>
+
+
+
+<h2 class="docs-heading">Problem<a href="#problem" name="problem" class="anchor">
+  <span class="anchor-target" id="problem"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>There are too many matching records to fit on a single web page</p>
+<h2 class="docs-heading">Solution<a href="#solution" name="solution" class="anchor">
+  <span class="anchor-target" id="solution"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>Break the larger search results into multiple pages of the same size</p>
+<h2 class="docs-heading">Context<a href="#context" name="context" class="anchor">
+  <span class="anchor-target" id="context"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>Large data sets may not fit well on a single web page. Pagination breaks up the
+full list of matching records into manageable smaller lists of equivalent size.
+When the full data set is not displayed on one page, provide navigation at the
+bottom of the table to move easily through the matching records, jumping to
+specific pages and the ends.</p>
+<h2 class="docs-heading">When to use<a href="#when-to-use" name="when-to-use" class="anchor">
+  <span class="anchor-target" id="when-to-use"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<ul>
+<li>If a large data sets does not fit easily onto a single web page.</li>
+<li>To provide an easy means of navigating a large list without scrolling.</li>
+</ul>
+<h2 class="docs-heading">Issues<a href="#issues" name="issues" class="anchor">
+  <span class="anchor-target" id="issues"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<ul>
+<li>Suggest we use icons in the back.next.etc buttons, and links rather than
+buttons for the numbered buttons, rather than words, to reduce the visual
+weight of the pagination.</li>
+</ul>
+
+
+
+
+<h2 class="docs-heading">Related<a href="#related" name="related" class="anchor">
+  <span class="anchor-target" id="related"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+
+<ul>
+
+  
+    
+  <li>
+    <a href="heading.html">Heading</a>
+    <span class="ksdg-Label ksdg-Label--small">atom</span>:
+    H1&ndash;H6 headings.
+  </li>
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  <li>
+    <a href="search.html">Search</a>
+    <span class="ksdg-Label ksdg-Label--small">molecule</span>:
+    This is a search form.
+  </li>
+    
+  
+
+</ul>
+
+
+</main>
+
+    </div>
+
+    
+
+  </body>
+</html>

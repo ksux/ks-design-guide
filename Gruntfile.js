@@ -159,12 +159,12 @@ module.exports = function (grunt) {
               '.htaccess',
               '*.html',
               'views/{,*/}*.html',
-              '<%= config.componentsFolder %>/**/*',
-              '<%= config.imgFolder %>/{,*/}*',
-              '<%= config.fontsFolder %>/{,*/}*',
-              '<%= config.dataFolder %>/{,*/}*',
-              '<%= config.imgFolder %>/{,*/}*',
-              '<%= config.jsFolder %>/{,*/}*.js'
+              '<%= config.componentsFolder %>/highlight/src/styles/github.css',
+              '<%= config.componentsFolder %>/normalize-css/normalize.css',
+              //'<%= config.imgFolder %>/{,*/}*',
+              //'<%= config.fontsFolder %>/{,*/}*',
+              //'<%= config.dataFolder %>/{,*/}*',
+              //'<%= config.jsFolder %>/{,*/}*.js'
             ]
           }
         ]

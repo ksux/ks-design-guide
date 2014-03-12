@@ -9,11 +9,11 @@
 
     <title>{{{page.title}}} &mdash; {{site.title}}</title>
 
-    <link rel="stylesheet" href="{{relative page.dest site.componentsFolder}}/highlight/src/styles/github.css" />
-    <link rel="stylesheet" href="{{relative page.dest site.componentsFolder}}/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="{{pathShift (relative page.dest site.componentsFolder)}}/highlight/src/styles/github.css" />
+    <link rel="stylesheet" href="{{pathShift (relative page.dest site.componentsFolder)}}/normalize-css/normalize.css" />
 
-    <link rel="stylesheet" href="{{relative page.dest site.cssFolder}}/{{site.cssMainFile}}.min.css" />
-    <link rel="stylesheet" href="{{relative page.dest site.cssFolder}}/patterns.min.css" />
+    <link rel="stylesheet" href="{{pathShift (relative page.dest site.cssFolder)}}/{{site.cssMainFile}}.min.css" />
+    <link rel="stylesheet" href="{{pathShift (relative page.dest site.cssFolder)}}/patterns.min.css" />
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
 
@@ -33,11 +33,11 @@
   <body class="ksdg-Page">
 
     <header class="ksdg-Page-header ksdg-Header">
-      <a href="{{relative page.dest ''}}" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <a href="{{pathShift (relative page.dest 'index.html')}}" class="ksdg-Header-title">Kuali Student Design Guide</a>
       <div class="ksdg-Header-body">
         <nav class="ksdg-Header-nav">
           <a class="ksdg-Header-navItem{{#if patterns}} ksdg-Header-navItem--active{{/if}}"
-            href="{{relative page.dest 'patterns'}}">Patterns</a>
+            href="{{pathShift (relative page.dest 'patterns/index.html')}}">Patterns</a>
         </nav>
         <span class="ksdg-Header-version">{{site.version}}</span>
       </div>

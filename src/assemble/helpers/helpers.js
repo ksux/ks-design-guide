@@ -14,5 +14,13 @@
       return ps[name](ctx, hash);
     });
 
+    // Used to remove the first part of a path.
+    // Useful to accomodate for the `dist` folder that's referenced during builds.
+    Handlebars.registerHelper('pathShift', function(path) {
+      var parts = path.split('/');
+      parts.shift();
+      return parts.join('/');
+    });
+
   };
 }).call(this);

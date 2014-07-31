@@ -7,7 +7,7 @@ var options = {
 };
 
 gulp.task('deploy', function() {
-  gulp.src('./dist/**/*')
+  return gulp.src('./dist/**/*')
     .pipe(deploy(options))
     .pipe(exit());
 });

@@ -54,6 +54,7 @@
     "normalize.css": "^3.0.1",
     "pretty": "0.1.2",
     "require-directory": "^2.0.0",
+    "run-sequence": "^0.3.6",
     "time-grunt": "~0.2.10"
   },
   "engines": {

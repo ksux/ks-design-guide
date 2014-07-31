@@ -50,6 +50,7 @@
     "lodash": "~2.4.0",
     "normalize.css": "^3.0.1",
     "pretty": "0.1.2",
+    "require-directory": "^2.0.0",
     "time-grunt": "~0.2.10"
   },
   "engines": {

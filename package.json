@@ -41,6 +41,8 @@
     "gulp": "^3.8.6",
     "gulp-autoprefixer": "0.0.8",
     "gulp-concat": "^2.3.4",
+    "gulp-exit": "0.0.2",
+    "gulp-gh-pages": "^0.3.3",
     "gulp-grunt": "^0.5.2",
     "gulp-less": "^1.3.2",
     "gulp-util": "^3.0.0",

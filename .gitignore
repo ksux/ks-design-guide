@@ -1,7 +1,7 @@
 # ================
 # Propeller
 # ================
-/dist
+/dist*
 /src/app/bower_components
 /src/assemble/data/*.json
 

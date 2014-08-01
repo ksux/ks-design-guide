@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Button &mdash; Kuali Student Design Guide</title>
+
+    <link rel="stylesheet" href="../assets/bundle.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="ksdg-Page">
+
+    <header class="ksdg-Page-header ksdg-Header">
+      <a href="../index.html" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <div class="ksdg-Header-body">
+        <nav class="ksdg-Header-nav">
+          <a class="ksdg-Header-navItem ksdg-Header-navItem--active" href="../patterns/index.html">Patterns</a>
+          <a class="ksdg-Header-navItem" href="../guidelines/index.html">Guidelines</a>
+        </nav>
+        <span class="ksdg-Header-version">0.1.1</span>
+      </div>
+    </header>
+
+    <div class="ksdg-Page-body">
+      
+
+<nav class="ksdg-Page-nav ksdg-Nav">
+  <h1 class="util-Visibility-screenReadersOnly">Patterns</h1>
+
+  <h2 class="ksdg-Nav-title">Atoms</h2>
+  <div class="ksdg-Nav-list">
+    
+    <a class="ksdg-Nav-item ksdg-Nav-item--active" href="button.html">Button</a>
+    
+    <a class="ksdg-Nav-item" href="heading.html">Heading</a>
+    
+    <a class="ksdg-Nav-item" href="page-title.html">Page Title</a>
+    
+  </div>
+
+  <h2 class="ksdg-Nav-title">Molecules</h2>
+  <div class="ksdg-Nav-list">
+    
+    <a class="ksdg-Nav-item" href="pagination.html">Pagination</a>
+    
+    <a class="ksdg-Nav-item" href="search.html">Search</a>
+    
+  </div>
+
+</nav>
+
+<main class="ksdg-Page-main">
+
+<div class="ksdg-Page-heading">
+  <h1 class="ksdg-Page-title">Button</h1>
+  <span class="ksdg-Label">atom</span>
+</div>
+
+<p>Buttons</p>
+
+
+<div id="toc" class="ksdg-Nav-toc ksdg-Toc">
+  <h2 class="ksdg-Toc-title">Contents</h2>
+<ul id="toc-list" class="ksdg-Toc-list"><li><ul><li><a href="#example">Example</a></li><li><a href="#wording">Wording</a></li></ul></li></ul></div>
+
+<h2 class="docs-heading">Example<a href="#example" name="example" class="anchor">
+  <span class="anchor-target" id="example"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+
+
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">UI</figcaption>
+  <div class="ksdg-Example-render">
+<p>
+  <button class="ks-Button ks-Button--default ks-Button--small">Default</button>
+  <button class="ks-Button ks-Button--primary ks-Button--small">Primary</button>
+  <button class="ks-Button ks-Button--success ks-Button--small">Success</button>
+  <button class="ks-Button ks-Button--info ks-Button--small">Info</button>
+  <button class="ks-Button ks-Button--warning ks-Button--small">Warning</button>
+  <button class="ks-Button ks-Button--danger ks-Button--small">Danger</button>
+</p>
+<p>
+  <button class="ks-Button ks-Button--default">Default</button>
+  <button class="ks-Button ks-Button--primary">Primary</button>
+  <button class="ks-Button ks-Button--success">Success</button>
+  <button class="ks-Button ks-Button--info">Info</button>
+  <button class="ks-Button ks-Button--warning">Warning</button>
+  <button class="ks-Button ks-Button--danger">Danger</button>
+</p>
+<p>
+  <button class="ks-Button ks-Button--default ks-Button--large">Default</button>
+  <button class="ks-Button ks-Button--primary ks-Button--large">Primary</button>
+  <button class="ks-Button ks-Button--success ks-Button--large">Success</button>
+  <button class="ks-Button ks-Button--info ks-Button--large">Info</button>
+  <button class="ks-Button ks-Button--warning ks-Button--large">Warning</button>
+  <button class="ks-Button ks-Button--danger ks-Button--large">Danger</button>
+</p>
+
+  </div>
+</figure>
+
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">HTML</figcaption>
+<pre><code class="language-html"><span class="tag">&lt;<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--default ks-Button--small"</span>&gt;</span>Default<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--primary ks-Button--small"</span>&gt;</span>Primary<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--success ks-Button--small"</span>&gt;</span>Success<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--info ks-Button--small"</span>&gt;</span>Info<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--warning ks-Button--small"</span>&gt;</span>Warning<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--danger ks-Button--small"</span>&gt;</span>Danger<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--default"</span>&gt;</span>Default<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--primary"</span>&gt;</span>Primary<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--success"</span>&gt;</span>Success<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--info"</span>&gt;</span>Info<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--warning"</span>&gt;</span>Warning<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--danger"</span>&gt;</span>Danger<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--default ks-Button--large"</span>&gt;</span>Default<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--primary ks-Button--large"</span>&gt;</span>Primary<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--success ks-Button--large"</span>&gt;</span>Success<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--info ks-Button--large"</span>&gt;</span>Info<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--warning ks-Button--large"</span>&gt;</span>Warning<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ks-Button ks-Button--danger ks-Button--large"</span>&gt;</span>Danger<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">p</span>&gt;</span></code></pre>
+
+</figure>
+
+<figure class="ksdg-Example">
+  <figcaption class="ksdg-Example-title">CSS</figcaption>
+<pre><code class="language-scss"><span class="at_rule">@color-Default: <span class="hexcolor">#fff</span>;</span>
+<span class="at_rule">@color-Primary: <span class="hexcolor">#428bca</span>;</span>
+<span class="at_rule">@color-Success: <span class="hexcolor">#5cb85c</span>;</span>
+<span class="at_rule">@color-Danger: <span class="hexcolor">#d9534f</span>;</span>
+<span class="at_rule">@color-Info: <span class="hexcolor">#5bc0de</span>;</span>
+<span class="at_rule">@color-Warning: <span class="hexcolor">#f0ad4e</span>;</span>
+
+<span class="class">.ks-Button</span> {
+  <span class="attribute">border</span><span class="value">: <span class="number">1px</span> solid transparent;</span>
+  <span class="attribute">border-radius</span><span class="value">: <span class="number">0.25em</span>;</span>
+  <span class="attribute">cursor</span><span class="value">: pointer;</span>
+  <span class="attribute">padding</span><span class="value">: <span class="number">0.5em</span> <span class="number">1em</span>;</span>
+
+  &amp;--<span class="value">default</span> {
+    <span class="class">.mixin</span>(<span class="at_rule">@color-Default);</span>
+  }
+
+  &amp;--primary {
+    <span class="class">.mixin</span>(<span class="at_rule">@color-Primary);</span>
+  }
+
+  &amp;--success {
+    <span class="class">.mixin</span>(<span class="at_rule">@color-Success);</span>
+  }
+
+  &amp;--info {
+    <span class="class">.mixin</span>(<span class="at_rule">@color-Info);</span>
+  }
+
+  &amp;--warning {
+    <span class="class">.mixin</span>(<span class="at_rule">@color-Warning);</span>
+  }
+
+  &amp;--danger {
+    <span class="class">.mixin</span>(<span class="at_rule">@color-Danger);</span>
+  }
+
+  &amp;--<span class="tag">small</span> {
+    <span class="attribute">font-size</span><span class="value">: <span class="number">80%</span>;</span>
+  }
+
+  &amp;--large {
+    <span class="attribute">font-size</span><span class="value">: <span class="number">120%</span>;</span>
+  }
+
+  <span class="class">.mixin</span>(<span class="at_rule">@color) {</span>
+    <span class="at_rule">@textColor:<span class="preprocessor"> contrast</span>(@color, <span class="hexcolor">#222</span>, <span class="hexcolor">#fff</span>,<span class="preprocessor"> 80</span>%);</span>
+    <span class="attribute">background-color</span><span class="value">: @color;</span>
+    <span class="attribute">border-color</span><span class="value">: <span class="function">darken</span>(@color, <span class="number">15%</span>);</span>
+    <span class="attribute">box-shadow</span><span class="value">: inset <span class="number">0</span> <span class="number">1px</span> <span class="number">0</span> <span class="number">0</span> <span class="function">tint</span>(@color, <span class="number">15%</span>);</span>
+    <span class="attribute">color</span><span class="value">: @textColor;</span>
+    <span class="attribute">text-shadow</span><span class="value">: <span class="number">0</span> -<span class="number">1px</span> <span class="function">contrast</span>(@textColor, <span class="function">darken</span>(@color, <span class="number">30%</span>), <span class="hexcolor">#fff</span>);</span>
+
+    &amp;<span class="pseudo">:hover</span>, &amp;<span class="pseudo">:focus</span>, &amp;<span class="pseudo">:active</span> {
+      <span class="attribute">background-color</span><span class="value">: <span class="function">darken</span>(@color, <span class="number">15%</span>);</span>
+      <span class="attribute">border-color</span><span class="value">: <span class="function">darken</span>(@color, <span class="number">30%</span>);</span>
+      <span class="attribute">color</span><span class="value">: @textColor;</span>
+      <span class="attribute">text-decoration</span><span class="value">: none;</span>
+    }
+
+    &amp;<span class="pseudo">:active</span> {
+      <span class="attribute">box-shadow</span><span class="value">: inset <span class="number">0</span> <span class="number">1px</span> <span class="number">1px</span> <span class="number">0</span> <span class="function">darken</span>(@color, <span class="number">30%</span>);</span>
+    }
+  }
+}</code></pre>
+
+</figure>
+
+
+
+<h2 class="docs-heading">Wording<a href="#wording" name="wording" class="anchor">
+  <span class="anchor-target" id="wording"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+
+
+<dl>
+  <dt>Action + Object</dt>
+  <dd>Use this format to clarify what will happen when the action is triggered. Default labels for buttons should be in the form <kbd>action + object type</kbd>, such as <em>Save Calendar</em>.</dd>
+
+  <dt>Space constraints</dt>
+  <dd>If there is a space constraint, label a button only with the action (<em>Save</em>).</dd>
+
+  <dt>Articles</dt>
+  <dd>By default, articles should not be used in labels. Use the article only when it is necessary to communicate the function of the button (<em>Release to Departments</em>).</dd>
+</dl>
+
+
+
+
+</main>
+
+    </div>
+
+    
+
+  </body>
+</html>

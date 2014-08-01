@@ -1,0 +1,65 @@
+@color-Default: #fff;
+@color-Primary: #428bca;
+@color-Success: #5cb85c;
+@color-Danger: #d9534f;
+@color-Info: #5bc0de;
+@color-Warning: #f0ad4e;
+
+.ks-Button {
+  border: 1px solid transparent;
+  border-radius: 0.25em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+
+  &--default {
+    .mixin(@color-Default);
+  }
+
+  &--primary {
+    .mixin(@color-Primary);
+  }
+
+  &--success {
+    .mixin(@color-Success);
+  }
+
+  &--info {
+    .mixin(@color-Info);
+  }
+
+  &--warning {
+    .mixin(@color-Warning);
+  }
+
+  &--danger {
+    .mixin(@color-Danger);
+  }
+
+  &--small {
+    font-size: 80%;
+  }
+
+  &--large {
+    font-size: 120%;
+  }
+
+  .mixin(@color) {
+    @textColor: contrast(@color, #222, #fff, 80%);
+    background-color: @color;
+    border-color: darken(@color, 15%);
+    box-shadow: inset 0 1px 0 0 tint(@color, 15%);
+    color: @textColor;
+    text-shadow: 0 -1px contrast(@textColor, darken(@color, 30%), #fff);
+
+    &:hover, &:focus, &:active {
+      background-color: darken(@color, 15%);
+      border-color: darken(@color, 30%);
+      color: @textColor;
+      text-decoration: none;
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 1px 0 darken(@color, 30%);
+    }
+  }
+}

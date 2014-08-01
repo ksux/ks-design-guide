@@ -305,6 +305,14 @@ module.exports = function (grunt) {
           '<%= config.dist %>/': ['<%= config.src %>/assemble/pages/{,*/}*.hbs']
         }
       },
+      guidelines: {
+        options: {
+          layout: 'guideline.hbs'
+        },
+        files: {
+          '<%= config.dist %>/guidelines/': ['<%= config.src %>/assemble/guidelines/{,*/}*.hbs']
+        }
+      },
       patterns: {
         options: {
           layout: 'pattern.hbs',

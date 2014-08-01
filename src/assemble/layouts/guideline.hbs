@@ -1,0 +1,24 @@
+---
+layout: default.hbs
+guidelines: true
+---
+
+<nav class="ksdg-Page-nav ksdg-Nav">
+  <h1 class="util-Visibility-screenReadersOnly">Guidelines</h1>
+  <div class="ksdg-Nav-list">
+    {{#each pages}}
+    {{#ifCond basename '!=' 'index'}}
+    <a class="ksdg-Nav-item{{#is ../../page.dest dest}} ksdg-Nav-item--active{{/is}}"
+      href="{{relative ../../page.dest dest}}">{{data.title}}</a>
+    {{/ifCond}}
+    {{/each}}
+  </div>
+</nav>
+
+<main class="ksdg-Page-main">
+
+  <h1 class="ksdg-Page-title">{{page.title}}</h1>
+
+  {{> body}}
+
+</main>

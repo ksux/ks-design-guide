@@ -1,0 +1,21 @@
+---
+title: Guidelines
+slug: guidelines
+layout: default.hbs
+guidelines: true
+---
+
+<main class="ksdg-Page-main">
+
+  <div class="ksdg-Page-heading">
+    <h1 class="ksdg-Page-title">{{page.title}}</h1>
+  </div>
+
+  {{#each pages}}
+  {{#ifCond basename '!=' 'index'}}
+  <a class="ksdg-Patterns-item"
+  href="{{relative ../../page.dest dest}}">{{data.title}}</a>
+  {{/ifCond}}
+  {{/each}}
+
+</main>

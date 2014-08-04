@@ -1,6 +1,12 @@
 # Kuali Student Design Guide
 
 UI patterns and design guidelines for Kuali Student.
+The Design Guide will supersede the wiki-based
+[User Interaction Model](https://wiki.kuali.org/display/STUDENTDOC/User+Interaction+Model)
+and the
+[KS UI Style Guide](https://wiki.kuali.org/pages/viewpage.action?title=KS+UI+Style+Guide&spaceKey=STUDENT)
+(a recent experimental refactoring of the UIM) once the information has been
+appropriately ported.
 
 ## Getting started
 

@@ -62,6 +62,13 @@ patterns: true
 
 {{> body}}
 
+{{#if capitalization}}
+{{#markdown}}
+## Capitalization ({{this.capitalization}} case)
+{{{partial (concat 'case.' this.capitalization)}}}
+{{/markdown}}
+{{/if}}
+
 {{#if related}}
 {{#markdown}}
 ## Related

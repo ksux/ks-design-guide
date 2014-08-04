@@ -41,5 +41,5 @@ gulp deploy
 ## Resources
 - [Assemble](http://assemble.io) for static site generation.
 - [gulp](http://gulpjs.com) for task management.
-- [Handlebars](http://handlebarsjs.com) as its template engine.
+- [Handlebars](http://handlebarsjs.com) for template processing.
 - [Less](http://lesscss.org) for CSS preprocessing.

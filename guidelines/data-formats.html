@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Formats &middot; Kuali Student Design Guide</title>
+
+    <link rel="stylesheet" href="../assets/bundle.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="ksdg-Page">
+
+    <header class="ksdg-Page-header ksdg-Header">
+      <a href="../index.html" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <div class="ksdg-Header-body">
+        <nav class="ksdg-Header-nav">
+          <a class="ksdg-Header-navItem" href="../patterns/index.html">Patterns</a>
+          <a class="ksdg-Header-navItem ksdg-Header-navItem--active" href="../guidelines/index.html">Guidelines</a>
+        </nav>
+        <span class="ksdg-Header-version">0.1.1</span>
+      </div>
+    </header>
+
+    <div class="ksdg-Page-body">
+      
+
+<nav class="ksdg-Page-nav ksdg-Nav">
+  <h1 class="util-Visibility-screenReadersOnly">Guidelines</h1>
+  <div class="ksdg-Nav-list">
+    
+    
+    <a class="ksdg-Nav-item" href="capitalization.html">Capitalization</a>
+    
+    
+    
+    <a class="ksdg-Nav-item ksdg-Nav-item--active" href="data-formats.html">Data Formats</a>
+    
+    
+    
+    
+    
+    <a class="ksdg-Nav-item" href="language.html">Language</a>
+    
+    
+    
+    <a class="ksdg-Nav-item" href="terminology.html">Terminology</a>
+    
+    
+  </div>
+</nav>
+
+<main class="ksdg-Page-main">
+
+  <h1 class="ksdg-Page-title">Data Formats</h1>
+
+  
+
+<h2 class="docs-heading">Internationalization<a href="#internationalization" name="internationalization" class="anchor">
+  <span class="anchor-target" id="internationalization"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>Formats should be largely configurable to reflect local preferences,
+such as <code>mm/dd/yyyy</code> vs. <code>dd/mm/yyyy</code>. Some data, though, should be universal.</p>
+<h2 class="docs-heading">Day<a href="#day" name="day" class="anchor">
+  <span class="anchor-target" id="day"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>All interfaces (e.g. administrative, student, public) wishing to utilize
+abbreviations for days of the week use the same notations.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Day</th>
+<th style="text-align:left">Abbreviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Monday</td>
+<td style="text-align:left">M</td>
+</tr>
+<tr>
+<td style="text-align:left">Tuesday</td>
+<td style="text-align:left">Tu</td>
+</tr>
+<tr>
+<td style="text-align:left">Wednesday</td>
+<td style="text-align:left">W</td>
+</tr>
+<tr>
+<td style="text-align:left">Thursday</td>
+<td style="text-align:left">Th</td>
+</tr>
+<tr>
+<td style="text-align:left">Friday</td>
+<td style="text-align:left">F</td>
+</tr>
+<tr>
+<td style="text-align:left">Saturday</td>
+<td style="text-align:left">S</td>
+</tr>
+<tr>
+<td style="text-align:left">Sunday</td>
+<td style="text-align:left">Su</td>
+</tr>
+</tbody>
+</table>
+<h2 class="docs-heading">Time<a href="#time" name="time" class="anchor">
+  <span class="anchor-target" id="time"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>Data entry for scheduling information should allow for smart interpretation of
+text to parse into the appropriate hour, minute format.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Input</th>
+<th style="text-align:right">Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">9A</td>
+<td style="text-align:right">9:00 am</td>
+</tr>
+<tr>
+<td style="text-align:right">920A</td>
+<td style="text-align:right">9:20 am</td>
+</tr>
+<tr>
+<td style="text-align:right">1P</td>
+<td style="text-align:right">1:00 pm</td>
+</tr>
+<tr>
+<td style="text-align:right">115P</td>
+<td style="text-align:right">1:15 pm</td>
+</tr>
+<tr>
+<td style="text-align:right">12P</td>
+<td style="text-align:right">12:00 pm</td>
+</tr>
+</tbody>
+</table>
+<h2 class="docs-heading">Accounting<a href="#accounting" name="accounting" class="anchor">
+  <span class="anchor-target" id="accounting"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>Display debits to one’s account in red and with parentheses. For students,
+things they owe are debits. For institution admins the student payments are debits.</p>
+
+
+
+</main>
+
+    </div>
+
+    
+
+  </body>
+</html>

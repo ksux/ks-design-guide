@@ -1,0 +1,44 @@
+---
+title: Data Formats
+slug: data-formats
+---
+
+{{#markdown}}
+## Internationalization
+
+Formats should be largely configurable to reflect local preferences,
+such as `mm/dd/yyyy` vs. `dd/mm/yyyy`. Some data, though, should be universal.
+
+## Day
+
+All interfaces (e.g. administrative, student, public) wishing to utilize
+abbreviations for days of the week use the same notations.
+
+Day | Abbreviation
+:-- | :--
+Monday | M
+Tuesday | Tu
+Wednesday | W
+Thursday | Th
+Friday | F
+Saturday | S
+Sunday | Su
+
+## Time
+
+Data entry for scheduling information should allow for smart interpretation of
+text to parse into the appropriate hour, minute format.
+
+Input | Interpretation
+--: | --:
+9A | 9:00 am
+920A | 9:20 am
+1P | 1:00 pm
+115P | 1:15 pm
+12P | 12:00 pm
+
+## Accounting
+
+Display debits to one’s account in red and with parentheses. For students,
+things they owe are debits. For institution admins the student payments are debits.
+{{/markdown}}

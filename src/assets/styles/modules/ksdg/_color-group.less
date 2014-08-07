@@ -1,0 +1,75 @@
+.ksdg-ColorGroup {
+  border: 1px solid @color-Base;
+
+  &-name {
+    display: block;
+    padding: 0.5em;
+  }
+
+  &-description {
+    font-size: 80%;
+    margin: 0;
+    padding: 0 0.5rem 0.5rem;
+  }
+
+  &-color {
+    align-items: center;
+    border-top: 1px solid @color-Base;
+    display: flex;
+    padding: 1em 0.5em;
+
+    //
+    // Term colors
+    //
+    &--fall {
+      .mixin(@color-Fall);
+    }
+
+    &--winter {
+      .mixin(@color-Winter);
+    }
+
+    &--spring {
+      .mixin(@color-Spring);
+    }
+
+    &--summer {
+      .mixin(@color-Summer);
+    }
+
+    //
+    // State colors
+    //
+    &--draft {
+      .mixin(@color-Draft);
+    }
+
+    &--completed {
+      .mixin(@color-Completed);
+    }
+
+    &--suspended {
+      .mixin(@color-Suspended);
+    }
+
+    &--ready {
+      .mixin(@color-Ready);
+    }
+
+    &--canceled {
+      .mixin(@color-Canceled);
+    }
+  }
+
+  &-var {
+    flex: 1;
+  }
+
+  &-value {
+  }
+
+  .mixin(@color) {
+    background-color: @color;
+    color: contrast(@color);
+  }
+}

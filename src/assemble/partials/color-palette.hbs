@@ -1,0 +1,14 @@
+<ul class="ksdg-ColorPalette">
+  {{#each this}}
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">{{@key}}</strong>
+    {{#if desc}}<p class="ksdg-ColorGroup-description">{{desc}}</p>{{/if}}
+    {{#each colors}}
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--{{mod}}">
+      <span class="ksdg-ColorGroup-var">@color-{{var}}</span>
+      <span class="ksdg-ColorGroup-value">{{val}}</span>
+    </code>
+    {{/each}}
+  </li>
+  {{/each}}
+</ul>

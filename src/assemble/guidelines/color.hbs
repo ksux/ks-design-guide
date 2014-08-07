@@ -1,0 +1,113 @@
+---
+title: Color
+slug: color
+termColors:
+  Fall:
+    colors:
+    - var: Fall
+      mod: fall
+      val: \#8b4600
+  Winter:
+    colors:
+    - var: Winter
+      mod: winter
+      val: \#23fafa
+  Spring:
+    colors:
+    - var: Spring
+      mod: spring
+      val: \#94ec0f
+  Summer:
+    colors:
+    - var: Summer
+      mod: summer
+      val: \#fef200
+stateColors:
+  Draft:
+    desc: Initial state immediately after creating the item (e.g. *Draft*, *Not Started*, *Unscheduled*).
+    colors:
+    - var: Draft
+      mod: draft
+      val: \#999
+  Ready:
+    desc: Preparatory state with item awaiting review (e.g. *Approved*, *Planned*, *In Progress*, *Unscheduled*, *Pending*, *Not Generated*, *Open*, *Final Edits*, *Publishing*).
+    colors:
+    - var: Ready
+      mod: ready
+      val: \#3a87ad
+  Completed:
+    name: Completed
+    desc: Finished item now in use. No further changes expected (e.g. *Offered*, *Official*, *Completed*, *Scheduled*, *Active*, *Generated*, *Published*).
+    colors:
+    - var: Completed
+      mod: completed
+      val: \#468847
+  Canceled:
+    desc: Discarded item, with no intent to use in the future (e.g. *Canceled*, *Error*, *Closed*).
+    colors:
+    - var: Canceled
+      mod: canceled
+      val: \#b94a48
+  Suspended:
+    desc: Item on hold, not in use but may be in the future (e.g. *Suspended*, *Superseded*, *Exempt*, *Inactive*, *Locked*, *Retired*).
+    colors:
+    - var: Suspended
+      mod: suspended
+      val: \#f89406
+---
+
+{{#markdown}}
+You can use hues, shades and patterns to improve communication and
+decision-making.
+
+## Principles
+
+### Accessibility
+
+Don’t rely on color alone to convey information.
+Colors that are used need a contrast ratio of at least 4.5:1 to adhere to
+WCAG 2.0 AA criteria 1.4.3.
+
+### Highlight changes
+
+When new content is added to the page (such as form elements or information),
+temporarily highlight the background of the changed area of the page using a
+transition that fades the color away after a few seconds.
+
+### Reinforce meaning
+
+Associate a single color with objects or states that have similar meanings to
+reducce the cognitive load on users. For example, use blue to consistently
+indicate an action. Whenever possible, leverage the following color palettes to
+reinforce meaning:
+
+Color | Usage
+:-- | :--
+Blue | Actionable elements, such as links, buttons, select tables.
+Teal | Relevant but non-critical information.
+Yellow | Warnings or critical changes that suggest future interaction.
+Red | Error messages and conditions that block a task from completion.
+Green | Success messages to indicate a task was completed.
+
+## Term color palette
+
+Colors are mapped to the seasons to reflect common North-American associations
+with weather as follows: brown fall, blue winter, green spring, yellow summer.
+This strategy allows for each color to be used for sub terms within a season.
+In some cases we have implemented a solution where the color of term is based
+on a gradient. Depending on where the term lies, the color can be a shade
+lighter or darker. In cases where this logic will not work,
+use the colors defined.
+
+{{> color-palette termColors}}
+
+## State color palette
+
+While each type of data object will likely have its own label and flow for its
+state management, there are five general state groups that are color-coded to
+hold consistent meaning across objects. These state groups leverage the message
+color palette.
+
+{{> color-palette stateColors}}
+
+{{/markdown}}

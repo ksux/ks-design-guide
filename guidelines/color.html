@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Color &middot; Kuali Student Design Guide</title>
+
+    <link rel="stylesheet" href="../assets/bundle.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="ksdg-Page">
+
+    <header class="ksdg-Page-header ksdg-Header">
+      <a href="../index.html" class="ksdg-Header-title">Kuali Student Design Guide</a>
+      <div class="ksdg-Header-body">
+        <nav class="ksdg-Header-nav">
+          <a class="ksdg-Header-navItem" href="../patterns/index.html">Patterns</a>
+          <a class="ksdg-Header-navItem ksdg-Header-navItem--active" href="../guidelines/index.html">Guidelines</a>
+        </nav>
+        <span class="ksdg-Header-version">0.1.1</span>
+      </div>
+    </header>
+
+    <div class="ksdg-Page-body">
+      
+
+<nav class="ksdg-Page-nav ksdg-Nav">
+  <h1 class="util-Visibility-screenReadersOnly">Guidelines</h1>
+  <div class="ksdg-Nav-list">
+    
+    
+    <a class="ksdg-Nav-item" href="capitalization.html">Capitalization</a>
+    
+    
+    
+    <a class="ksdg-Nav-item ksdg-Nav-item--active" href="color.html">Color</a>
+    
+    
+    
+    <a class="ksdg-Nav-item" href="data-formats.html">Data Formats</a>
+    
+    
+    
+    
+    
+    <a class="ksdg-Nav-item" href="language.html">Language</a>
+    
+    
+    
+    <a class="ksdg-Nav-item" href="terminology.html">Terminology</a>
+    
+    
+  </div>
+</nav>
+
+<main class="ksdg-Page-main">
+
+  <h1 class="ksdg-Page-title">Color</h1>
+
+  
+
+<p>You can use hues, shades and patterns to improve communication and
+decision-making.</p>
+<h2 class="docs-heading">Principles<a href="#principles" name="principles" class="anchor">
+  <span class="anchor-target" id="principles"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<h3 class="docs-heading">Accessibility<a href="#accessibility" name="accessibility" class="anchor">
+  <span class="anchor-target" id="accessibility"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h3>
+<p>Don’t rely on color alone to convey information.
+Colors that are used need a contrast ratio of at least 4.5:1 to adhere to
+WCAG 2.0 AA criteria 1.4.3.</p>
+<h3 class="docs-heading">Highlight changes<a href="#highlight-changes" name="highlight-changes" class="anchor">
+  <span class="anchor-target" id="highlight-changes"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h3>
+<p>When new content is added to the page (such as form elements or information),
+temporarily highlight the background of the changed area of the page using a
+transition that fades the color away after a few seconds.</p>
+<h3 class="docs-heading">Reinforce meaning<a href="#reinforce-meaning" name="reinforce-meaning" class="anchor">
+  <span class="anchor-target" id="reinforce-meaning"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h3>
+<p>Associate a single color with objects or states that have similar meanings to
+reducce the cognitive load on users. For example, use blue to consistently
+indicate an action. Whenever possible, leverage the following color palettes to
+reinforce meaning:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Color</th>
+<th style="text-align:left">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Blue</td>
+<td style="text-align:left">Actionable elements, such as links, buttons, select tables.</td>
+</tr>
+<tr>
+<td style="text-align:left">Teal</td>
+<td style="text-align:left">Relevant but non-critical information.</td>
+</tr>
+<tr>
+<td style="text-align:left">Yellow</td>
+<td style="text-align:left">Warnings or critical changes that suggest future interaction.</td>
+</tr>
+<tr>
+<td style="text-align:left">Red</td>
+<td style="text-align:left">Error messages and conditions that block a task from completion.</td>
+</tr>
+<tr>
+<td style="text-align:left">Green</td>
+<td style="text-align:left">Success messages to indicate a task was completed.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="docs-heading">Term color palette<a href="#term-color-palette" name="term-color-palette" class="anchor">
+  <span class="anchor-target" id="term-color-palette"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>Colors are mapped to the seasons to reflect common North-American associations
+with weather as follows: brown fall, blue winter, green spring, yellow summer.
+This strategy allows for each color to be used for sub terms within a season.
+In some cases we have implemented a solution where the color of term is based
+on a gradient. Depending on where the term lies, the color can be a shade
+lighter or darker. In cases where this logic will not work,
+use the colors defined.</p>
+<ul class="ksdg-ColorPalette">
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Fall</strong>
+
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--fall">
+      <span class="ksdg-ColorGroup-var">@color-Fall</span>
+      <span class="ksdg-ColorGroup-value">#8b4600</span>
+    </code>
+
+  </li>
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Winter</strong>
+
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--winter">
+      <span class="ksdg-ColorGroup-var">@color-Winter</span>
+      <span class="ksdg-ColorGroup-value">#23fafa</span>
+    </code>
+
+  </li>
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Spring</strong>
+
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--spring">
+      <span class="ksdg-ColorGroup-var">@color-Spring</span>
+      <span class="ksdg-ColorGroup-value">#94ec0f</span>
+    </code>
+
+  </li>
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Summer</strong>
+
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--summer">
+      <span class="ksdg-ColorGroup-var">@color-Summer</span>
+      <span class="ksdg-ColorGroup-value">#fef200</span>
+    </code>
+
+  </li>
+
+</ul>
+
+
+<h2 class="docs-heading">State color palette<a href="#state-color-palette" name="state-color-palette" class="anchor">
+  <span class="anchor-target" id="state-color-palette"></span>
+  <span class="glyphicon glyphicon-link"></span>
+</a></h2>
+<p>While each type of data object will likely have its own label and flow for its
+state management, there are five general state groups that are color-coded to
+hold consistent meaning across objects. These state groups leverage the message
+color palette.</p>
+<ul class="ksdg-ColorPalette">
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Draft</strong>
+    <p class="ksdg-ColorGroup-description">Initial state immediately after creating the item (e.g. <em>Draft</em>, <em>Not Started</em>, <em>Unscheduled</em>).</p>
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--draft">
+      <span class="ksdg-ColorGroup-var">@color-Draft</span>
+      <span class="ksdg-ColorGroup-value">#999</span>
+    </code>
+
+  </li>
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Ready</strong>
+    <p class="ksdg-ColorGroup-description">Preparatory state with item awaiting review (e.g. <em>Approved</em>, <em>Planned</em>, <em>In Progress</em>, <em>Unscheduled</em>, <em>Pending</em>, <em>Not Generated</em>, <em>Open</em>, <em>Final Edits</em>, <em>Publishing</em>).</p>
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--ready">
+      <span class="ksdg-ColorGroup-var">@color-Ready</span>
+      <span class="ksdg-ColorGroup-value">#3a87ad</span>
+    </code>
+
+  </li>
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Completed</strong>
+    <p class="ksdg-ColorGroup-description">Finished item now in use. No further changes expected (e.g. <em>Offered</em>, <em>Official</em>, <em>Completed</em>, <em>Scheduled</em>, <em>Active</em>, <em>Generated</em>, <em>Published</em>).</p>
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--completed">
+      <span class="ksdg-ColorGroup-var">@color-Completed</span>
+      <span class="ksdg-ColorGroup-value">#468847</span>
+    </code>
+
+  </li>
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Canceled</strong>
+    <p class="ksdg-ColorGroup-description">Discarded item, with no intent to use in the future (e.g. <em>Canceled</em>, <em>Error</em>, <em>Closed</em>).</p>
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--canceled">
+      <span class="ksdg-ColorGroup-var">@color-Canceled</span>
+      <span class="ksdg-ColorGroup-value">#b94a48</span>
+    </code>
+
+  </li>
+
+  <li class="ksdg-ColorPalette-group ksdg-ColorGroup">
+    <strong class="ksdg-ColorGroup-name">Suspended</strong>
+    <p class="ksdg-ColorGroup-description">Item on hold, not in use but may be in the future (e.g. <em>Suspended</em>, <em>Superseded</em>, <em>Exempt</em>, <em>Inactive</em>, <em>Locked</em>, <em>Retired</em>).</p>
+
+    <code class="ksdg-ColorGroup-color ksdg-ColorGroup-color--suspended">
+      <span class="ksdg-ColorGroup-var">@color-Suspended</span>
+      <span class="ksdg-ColorGroup-value">#f89406</span>
+    </code>
+
+  </li>
+
+</ul>
+
+
+
+
+
+</main>
+
+    </div>
+
+    
+
+  </body>
+</html>

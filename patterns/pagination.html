@@ -65,10 +65,9 @@
 
 <main class="ksdg-Page-main">
 
-<div class="ksdg-Page-heading">
-  <h1 class="ksdg-Page-title">Pagination</h1>
-  <span class="ksdg-Label">molecule</span>
-</div>
+<h1 class="ksdg-Page-title">Pagination
+  <span class="ksdg-Page-titleLabel ksdg-Label">molecule</span>
+</h1>
 
 <p>Navigation of a large dataset by chunking records into smaller pages.</p>
 
@@ -103,38 +102,38 @@
 
 <figure class="ksdg-Example">
   <figcaption class="ksdg-Example-title">HTML</figcaption>
-<pre><code class="language-html"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination"</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>First<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>Previous<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item ks-Pagination-item--active"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>5<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>Next<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span> <span class="attribute">class</span>=<span class="value">"ks-Pagination-item"</span>&gt;</span>Last<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></code></pre>
+<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>First<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item ks-Pagination-item--active"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ks-Pagination-item"</span>&gt;</span>Last<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span></code></pre>
 
 </figure>
 
 <figure class="ksdg-Example">
   <figcaption class="ksdg-Example-title">CSS</figcaption>
-<pre><code class="language-scss"><span class="class">.ks-Pagination</span> {
-  <span class="attribute">background-color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
-  <span class="attribute">display</span><span class="value">: inline-block;</span>
-  <span class="attribute">border</span><span class="value">: <span class="number">1px</span> solid <span class="hexcolor">#ccc</span>;</span>
+<pre><code class="scss"><span class="hljs-class">.ks-Pagination</span> {
+  <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#fff</span>;</span>
+  <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span>
+  <span class="hljs-attribute">border</span><span class="hljs-value">: <span class="hljs-number">0.1em</span> solid <span class="hljs-hexcolor">#ccc</span>;</span>
 
   &amp;-item {
-    <span class="attribute">display</span><span class="value">: inline-block;</span>
-    <span class="attribute">padding</span><span class="value">: <span class="number">0.25em</span>;</span>
+    <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span>
+    <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">0.25em</span>;</span>
 
     &amp;--active {
-      <span class="attribute">color</span><span class="value">: <span class="hexcolor">#666</span>;</span>
-      <span class="attribute">text-decoration</span><span class="value">: none;</span>
+      <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#666</span>;</span>
+      <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span>
     }
 
-    &amp;<span class="pseudo">:hover</span> {
-      <span class="attribute">background-color</span><span class="value">: <span class="hexcolor">#eef</span>;</span>
+    &amp;<span class="hljs-pseudo">:hover</span> {
+      <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#eef</span>;</span>
     }
   }
 }</code></pre>

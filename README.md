@@ -12,8 +12,8 @@ appropriately ported.
 ## Getting started
 
 1. Download and install [Node](http://nodejs.org).
-- Install global environment dependencies: `npm install -g gulp bower grunt-cli`
-- Install project dependencies: `npm install && bower install`
+- Install global environment dependencies: `npm install -g gulp grunt-cli`
+- Install project dependencies: `npm install`
 
 ## Tasks
 

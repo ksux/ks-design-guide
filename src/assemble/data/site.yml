@@ -1,7 +1,6 @@
 title:            "Kuali Student Design Guide"
 author:           ""
 year:             "2014"
-componentsFolder: "app/bower_components"
 cssFolder:        "assets"
 jsFolder:         "app/scripts"
 imgFolder:        "app/img"

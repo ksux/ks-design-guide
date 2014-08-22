@@ -1,1 +1,8 @@
-@ratio-Golden: 1.61803398875;
+// http://modularscale.com
+@ratio-MajorThird: 5/4;
+@ratio-MinorThird: 6/5;
+
+@ratio-Scale: @ratio-MajorThird;
+@ratio-Scale--1: percentage(@ratio-Scale);
+@ratio-Scale--2: percentage(pow(@ratio-Scale, 2));
+@ratio-Scale--3: percentage(pow(@ratio-Scale, 3));

@@ -1,10 +1,10 @@
 .ksdg-Nav {
   border: 1px solid @color-Base;
-  border-width: 0 0 1px;
+  border-width: 0 0 0.1em;
   padding: 1em 0;
 
   @media @xs {
-    border-width: 0 1px 0 0;
+    border-width: 0 0.1em 0 0;
     padding: 0;
   }
 
@@ -17,12 +17,12 @@
 
   &-item {
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.75em 1em;
     text-decoration: none;
 
     &:hover, &--active {
       background-color: @color-Active;
-      box-shadow: 1px 0 0 @color-Active--dark;
+      box-shadow: 0.1em 0 0 @color-Active--dark;
     }
   }
 

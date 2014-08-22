@@ -1,6 +1,6 @@
 .ksdg-Header {
-  box-shadow: 0 0.25em 0 0 @color-Base;
-  margin-bottom: 0.25em;
+  box-shadow: 0 0.2em 0 0 @color-Base;
+  margin-bottom: 0.2em;
 
   @media @xs {
     align-items: baseline;
@@ -34,16 +34,16 @@
 
   &-navItem {
     font-size: 1.2em;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem;
     text-decoration: none;
 
     @media @xs {
-      padding: 0.5rem;
+      padding: 0.75rem 0.5rem;
     }
 
     &:hover, &--active {
       background-color: @color-Active;
-      box-shadow: 0 0.25rem 0 0 @color-Active--dark;
+      box-shadow: 0 0.2rem 0 0 @color-Active--dark;
     }
   }
 
@@ -52,11 +52,7 @@
     border-radius: 0.125rem;
     font-size: 0.8em;
     margin: 0 0.5rem;
-    padding: 0 0.25rem;
-
-    @media @xs {
-      padding: 0.25rem;
-    }
+    padding: 0.25rem;
 
     &::before {
       content: 'v';

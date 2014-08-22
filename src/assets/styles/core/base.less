@@ -1,6 +1,7 @@
 body {
   color: @color-Text;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1;
 }
 
 a {
@@ -9,4 +10,11 @@ a {
   &:visited {
     color: @color-Link--visited;
   }
+}
+
+dl,
+p,
+table,
+ul {
+  line-height: @ratio-Scale--2;
 }

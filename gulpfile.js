@@ -5,4 +5,4 @@
 // gulp task organization inspired by:
 // https://github.com/greypants/gulp-starter
 //
-require('require-directory')(module, './gulp');
+require('require-directory')(module, './tasks');

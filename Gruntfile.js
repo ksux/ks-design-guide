@@ -27,7 +27,7 @@ module.exports = function (grunt) {
     // Project settings
     yeoman: {
       // configurable paths
-      app: require('./bower.json').appPath || 'app',
+      app: 'app',
       dist: 'dist'
     },
 
@@ -36,7 +36,6 @@ module.exports = function (grunt) {
       src:              'src',
       dist:             'dist',
       appFolder:        'app',
-      componentsFolder: 'app/bower_components',
       jsFolder:         'app/scripts',
       cssFolder:        'app/styles',
       imgFolder:        'app/img',
@@ -162,8 +161,6 @@ module.exports = function (grunt) {
               '.htaccess',
               '*.html',
               'views/{,*/}*.html',
-              '<%= config.componentsFolder %>/highlight/src/styles/github.css',
-              '<%= config.componentsFolder %>/normalize-css/normalize.css',
               //'<%= config.imgFolder %>/{,*/}*',
               //'<%= config.fontsFolder %>/{,*/}*',
               //'<%= config.dataFolder %>/{,*/}*',

@@ -6,7 +6,7 @@
 @color-Warning: #f0ad4e;
 
 .ks-Button {
-  border: 1px solid transparent;
+  border: 0.1em solid transparent;
   border-radius: 0.25em;
   cursor: pointer;
   padding: 0.5em 1em;
@@ -47,9 +47,9 @@
     @textColor: contrast(@color, #222, #fff, 80%);
     background-color: @color;
     border-color: darken(@color, 15%);
-    box-shadow: inset 0 1px 0 0 tint(@color, 15%);
+    box-shadow: inset 0 0.1em 0 0 tint(@color, 15%);
     color: @textColor;
-    text-shadow: 0 -1px contrast(@textColor, darken(@color, 30%), #fff);
+    text-shadow: 0 -0.1em contrast(@textColor, darken(@color, 30%), #fff);
 
     &:hover, &:focus, &:active {
       background-color: darken(@color, 15%);
@@ -59,7 +59,7 @@
     }
 
     &:active {
-      box-shadow: inset 0 1px 1px 0 darken(@color, 30%);
+      box-shadow: inset 0 0.1em 0.1em 0 darken(@color, 30%);
     }
   }
 }

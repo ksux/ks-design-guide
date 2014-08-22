@@ -7,7 +7,7 @@ var browserSync = require('browser-sync');
 gulp.task('styles', function() {
   return gulp.src([
       './node_modules/normalize.css/normalize.css',
-      './src/assets/bower_components/highlight/src/styles/github.css',
+      './node_modules/highlight.js/styles/github.css',
       './src/assets/styles/main.less',
       './src/assemble/patterns/patterns.less'
     ])

@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 
   // Code syntax highlighting.
   var hljs = require('highlight.js');
-  hljs.configure({ classPrefix: '' });
+  hljs.configure({ classPrefix: 'hljs-' });
 
   // NPM Package
   //var pkg = require('./package.json');
@@ -284,7 +284,7 @@ module.exports = function (grunt) {
           highlight: function (code, lang) {
             return hljs.highlight(lang, code).value;
           },
-          langPrefix: 'language-',
+          langPrefix: '',
           pedantic: false,
           sanitize: false,
           silent: false,

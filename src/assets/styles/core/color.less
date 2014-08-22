@@ -1,20 +1,27 @@
 
+// http://clrs.cc
+@color-Blue: #0074d9;
+@color-Yellow: #ffdc00;
+
 // Active background colors.
-@color-Active: darken(#eef, 2.5%);
+@color-Active: lighten(@color-Blue, 50%);
 @color-Active--dark: darken(@color-Active, 25%);
 
 // Neutral shade colors.
 @color-Base: #ddd;
-@color-Base--text: darken(@color-Base, 60%);
 @color-Base--dark: darken(@color-Base, 30%);
 @color-Base--light: lighten(@color-Base, 10%);
+
+@color-Link: @color-Blue;
+@color-Link--visited: darken(@color-Link, 15%);
+
+@color-Text: lighten(#000, 20%);
 
 // Colors used for showcasing code.
 @color-Code: #f8f8ff;
 
-@color-Highlight: lighten(yellow, 45%);
-@color-Highlight--dark: darken(@color-Highlight, 50%);
-@color-Highlight--darker: darken(@color-Highlight--dark, 15%);
+@color-Highlight: lighten(@color-Yellow, 30%);
+@color-Highlight--dark: darken(@color-Highlight, 60%);
 
 @color-Fall: #8b4600;
 @color-Winter: #23fafa;

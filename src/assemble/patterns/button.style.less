@@ -51,7 +51,9 @@
     color: @textColor;
     text-shadow: 0 -0.1em contrast(@textColor, darken(@color, 30%), #fff);
 
-    &:hover, &:focus, &:active {
+    &:active,
+    &:focus,
+    &:hover {
       background-color: darken(@color, 15%);
       border-color: darken(@color, 30%);
       color: @textColor;

@@ -1,0 +1,24 @@
+.ksdg-Figure {
+  border: 0.1em solid @color-Base;
+  margin: 0;
+
+  &-link {
+    box-shadow: 0 0.1em 0 0 @color-Base;
+    display: block;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 0 0.1em @color-Link;
+    }
+  }
+
+  &-img {
+    max-width: 100%;
+  }
+
+  &-caption {
+    box-sizing: border-box;
+    padding: 0 0.5em;
+    max-width: 40em;
+  }
+}

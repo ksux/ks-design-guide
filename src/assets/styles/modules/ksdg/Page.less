@@ -49,21 +49,32 @@
       margin-bottom: 0.5em;
     }
 
-    > h1, > h2, > h3 {
+    > h1,
+    > h2,
+    > h3 {
 
-      + p, + ul {
+      + p,
+      + ul {
         margin-top: 0;
       }
     }
 
     // Aim for 90 characters per line.
     // http://practicaltypography.com/line-length.html
-    > p, > ul, > dl {
+    > dl,
+    > ol,
+    > p,
+    > ul {
+      box-sizing: border-box;
       max-width: 40rem;
     }
 
-    > ul:not([class]) {
-      padding-left: 1.5em;
+    ol,
+    ul {
+
+      &:not([class]) {
+        padding-left: 1.5em;
+      }
     }
 
     dt {
@@ -82,7 +93,8 @@
       background-color: @color-Base--light;
     }
 
-    th, td {
+    td,
+    th {
       border: 0.1em solid @color-Base;
       padding: 0.5rem;
     }

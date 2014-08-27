@@ -1,0 +1,59 @@
+@color-Yellow: #ffdc00;
+@color-Checkbox-bg: tint(@color-Yellow, 70%);
+@color-Border: darken(#fff, 20%);
+
+@component: ks-Checkbox;
+
+.@{component} {
+  display: inline-block;
+  padding: 0.5em;
+  position: relative;
+
+  &:hover {
+    background-color: @color-Checkbox-bg;
+  }
+
+  &-input {
+    margin-right: 0.25em;
+    position: relative;
+    z-index: 1;
+
+    &:checked {
+
+      & + .@{component}-label::before {
+        content: attr(data-label);
+        position: absolute;
+        z-index: 1;
+      }
+
+      & + .@{component}-label::after {
+        background-color: @color-Checkbox-bg;
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &-label {
+  }
+}
+
+.ks-Fieldset {
+  border: 0.1em solid @color-Border;
+
+  & + & {
+    margin-top: 1em;
+  }
+
+  &-legend {
+    padding: 0 0.5em;
+  }
+
+  &-field {
+  }
+}

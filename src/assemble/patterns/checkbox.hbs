@@ -1,0 +1,109 @@
+---
+title: Checkbox
+slug: checkbox
+categories: atom
+description: An input field used to indicate one or more selections from a list in a form.
+---
+
+{{#markdown}}
+
+## Guidelines
+
+{{/markdown}}
+
+<figure class="ksdg-Figure">
+  <a class="ksdg-Figure-link" href="https://cloud.githubusercontent.com/assets/347558/4036472/3c25b0dc-2c9a-11e4-8896-965fe3ac8832.png">
+    <img class="ksdg-Figure-img" src="https://cloud.githubusercontent.com/assets/347558/4036472/3c25b0dc-2c9a-11e4-8896-965fe3ac8832.png" alt="Checkbox example"/>
+  </a>
+  <figcaption class="ksdg-Figure-caption">
+
+{{#markdown}}
+
+1. Checkboxes are typically presented as a group of options,
+from which the user may select one, none, or many from the list.
+1. Single checkboxes act as a toggle, representing a boolean choice (Yes or No).
+1. In some cases, this choice further reveals or enables additional input fields
+that are relevant to the attribute.
+
+{{/markdown}}
+
+  </figcaption>
+</figure>
+
+{{#markdown}}
+
+## When to use
+
+- When optional input is desired that allows for multiple selections from a small list.
+- As a boolean choice for a single option, either Yes or No.
+
+## Note
+
+- Checkboxes should not presume a selection. Select a default on page load *only* to reflect previously stated preferences.
+- A checkbox should not be used to change state (such as, *Make Official*) when it is not something that can be reversed.
+
+## Variations
+
+### Checkbox group (default)
+
+{{/markdown}}
+
+<figure class="ksdg-Figure">
+  <a class="ksdg-Figure-link" href="https://cloud.githubusercontent.com/assets/347558/4036527/b4c53d14-2c9a-11e4-981e-33c531811d21.png">
+    <img class="ksdg-Figure-img" src="https://cloud.githubusercontent.com/assets/347558/4036527/b4c53d14-2c9a-11e4-981e-33c531811d21.png" alt="Default checkbox variation"/>
+  </a>
+  <figcaption class="ksdg-Figure-caption">
+
+{{#markdown}}
+
+- A Checkbox Group is a list of multiple items from which a user may select zero or more. Use when optional input is desired that allows for multiple selections from a small list.
+- For groups with a large number of items (greater than 10&ndash;15 items), use subheaders to group similar options together and improve meaning.
+- A Checkbox Group should never be a required field.
+- A user should be allowed to select none of the items in the group.
+- If the information must be collected, consider a different multi-select control.
+
+{{/markdown}}
+
+  </figcaption>
+</figure>
+
+{{#markdown}}
+
+### Checkbox toggle
+
+{{/markdown}}
+
+<figure class="ksdg-Figure">
+  <a class="ksdg-Figure-link" href="https://cloud.githubusercontent.com/assets/347558/4036560/e690e7ee-2c9a-11e4-82ff-913986fb3370.png">
+    <img class="ksdg-Figure-img" src="https://cloud.githubusercontent.com/assets/347558/4036560/e690e7ee-2c9a-11e4-82ff-913986fb3370.png" alt="Toggle checkbox variation"/>
+  </a>
+  <figcaption class="ksdg-Figure-caption">
+
+{{#markdown}}
+
+- A Checkbox Toggle is used to indicate whether a presented option is desired.
+- Only one option is made available to the user (such as *Send email update*).
+- Checkbox Toggles may be required as a way to acknowledge critical information.
+- Use as a boolean choice for a single option, for example indicating to use a delivery address as a billing address.
+
+{{/markdown}}
+
+  </figcaption>
+</figure>
+
+{{#markdown}}
+
+## Examples
+
+- [Add Offerings](http://ux.ks.kuali.org.s3.amazonaws.com/wireframes/R2.0/Course%20Offering/create/create_from_catalog/current_version/index.html?Page=08_AddOffering03):
+See Course Formats.
+- [Configure Rollover](http://ux.ks.kuali.org.s3.amazonaws.com/wireframes/R2.0/Course%20Offering/create/create_from_rollover/current/index.html?Page=01B_Custom_Rollover):
+See Customizable Data Attributes.
+- [Release to Departments](http://ux.ks.kuali.org.s3.amazonaws.com/wireframes/R2.0/Course%20Offering/create/create_from_rollover/current/index.html?Page=05_Release_To_Departments):
+See, "I understand that this action can not be reversed."
+- Indicating that you do not want to see a dialog window again.
+
+## Resources
+- [Discussion sandbox](https://docs.google.com/a/kuali.org/document/d/1f-STiAYad9i77FmxopomPCABynVxr7jeIYfQP2-lLco/edit)
+- [Additional resources for decisions and rationale](https://groups.diigo.com/group/kuali-ux/content/tag/checkboxes)
+{{/markdown}}
